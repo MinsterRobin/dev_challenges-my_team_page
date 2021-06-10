@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+
+import TeamPage from './pages/Team'
+import GlobalStyles from "./components/GlobalStyles";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <GlobalStyles>
+            <TeamPage />
+        </GlobalStyles>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
