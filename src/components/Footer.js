@@ -2,12 +2,14 @@ import styled from "styled-components";
 import React from "react";
 
 const FooterSC = styled.div`
+    min-width: max-content;
     display: flex;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 4em;
 `;
 
 const PSC = styled.div`
+    min-width: max-content;
     font-family: var(--font-family-tertiary);
     font-size: 14px;
     font-weight: 500;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from "react";
 
 const TeamMemberCardLayout = styled.div`
-    padding-top: ${props => props.index % 3 === 1 ? "80px" : 0};
+    padding-top: ${props => props.index % 3 === 1 ? "100px" : 0};
     justify-self: center;
 
     max-width: max-content;
@@ -13,7 +13,7 @@ const TeamMemberCardLayout = styled.div`
     position: relative;
     
     @media(max-width: 992px) {
-        padding-top: ${props => props.index % 2 === 1 ? "80px" : 0};
+        padding-top: ${props => props.index % 2 === 1 ? "100px" : 0};
     }
 `;
 
@@ -38,8 +38,9 @@ const Job = styled.div`
 `;
 
 const TeamMemberCard = (props) => {
-    let wtf = props.index % 2 === 1;
+    let wtf = window.innerWidth;
     console.log("Index: " + props.index + ", Résultat: " + wtf);
+
     return(
         <TeamMemberCardLayout index={props.index}>
             <ProfilePicture src={props.src_profile_picture} />

@@ -5,7 +5,6 @@ import ShaeLePP from "../../assets/Shae_Le.png";
 import SkylahLuPP from "../../assets/Skylah_Lu.png";
 import StanJohnPP from "../../assets/Stan_John.png";
 
-
 const TeamMembers = [
     {
         name: "Bill Mahoney",

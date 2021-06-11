@@ -5,7 +5,8 @@ const HeaderSC = styled.header`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+    gap: 2em;
 `;
 
 const HeaderTitle = styled.h1`
@@ -18,7 +19,7 @@ const HeaderTitle = styled.h1`
 
 const InfosHeader = styled.div`
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
     
     display: flex;
     flex-direction: column;

@@ -7,21 +7,15 @@ import TeamMemberCard from "./TeamMemberCard";
 import TeamMembers from "./data";
 
 const GridLayoutSC = styled.div`
-    justify-items: auto;
-    align-content: center;
     flex: 1;
     height: 100%;
-    //background-color: red; //DEBUG
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     column-gap: 1em;
-    //row-gap: 90px;
-    
-    div {
-        //background-color: blue; //DEBUG
-        width: 100%;
-    }
+    justify-items: auto;
+    align-content: center;
     
     @media (max-width: 992px) {
         grid-template-columns: repeat(2, minmax(155px, 1fr));
